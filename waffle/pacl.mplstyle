@@ -1,0 +1,22 @@
+figure.figsize: 8.6, 7
+figure.dpi: 150
+figure.facecolor: white
+figure.edgecolor: black
+figure.titlesize: 16
+figure.subplot.hspace: 0.4
+figure.subplot.wspace: 0.3
+
+axes.facecolor: white
+axes.edgecolor: black
+axes.linewidth: 0.8
+axes.grid: True
+axes.grid.axis: both
+axes.titlesize: 12
+axes.zmargin: 50
+
+font.family: sans
+font.style: normal
+font.variant: normal
+font.weight: normal
+font.stretch: normal
+font.size: 10.0
