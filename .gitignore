@@ -1,3 +1,8 @@
+# Jupyter
+.virtual_documents
+.jupyter_ystore.db
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
