@@ -25,7 +25,7 @@ dependencies = [
   "cftime",
   "nc_time_axis"
 ]
-keywords = ["large ensembles", "figure", "matplotlib"]
+keywords = ["waffle", "large ensembles", "figure", "matplotlib"]
 
 [project.urls]
 Homepage = "https://github.com/AgentOxygen/WAFFLE"
@@ -33,3 +33,13 @@ Issues = "https://github.com/AgentOxygen/WAFFLE"
 
 [tool.setuptools]
 packages = ["waffle"]
+
+[tool.setuptools.package-data]
+waffle = [
+    "ipcc_colormaps/*.txt",
+    "ipcc_colormaps/categorical_colors_rgb_0-255/*",
+    "ipcc_colormaps/continuous_colormaps_rgb_0-1/*",
+    "ipcc_colormaps/continuous_colormaps_rgb_0-255/*",
+    "discrete_colormaps_rgb_0-255/*",
+    "reference_datasets/*.nc"
+]
