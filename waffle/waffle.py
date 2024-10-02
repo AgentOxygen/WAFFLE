@@ -19,20 +19,6 @@ def addSubPlotLabels(f):
         ax.set_title(f"{label})", loc="left", fontweight="bold")
 
 
-class WinkelTripel(ccrs._WarpedRectangularProjection):
-    def __init__(self, central_longitude=0.0, central_latitude=0.0, globe=None):
-        globe = globe or ccrs.Globe(semimajor_axis=ccrs.WGS84_SEMIMAJOR_AXIS)
-        proj4_params = [('proj', 'wintri'),
-                        ('lon_0', central_longitude),
-                        ('lat_0', central_latitude)]
-
-        super(WinkelTripel, self).__init__(proj4_params, central_longitude, globe=globe)
-
-    @property
-    def threshold(self):
-        return 1e4
-
-
 def generateReferenceFigure():
     sample_spatial_ds = xarray.open_dataset(PATH_SAMPLE_SPATIAL)[SAMPLE_VAR] - 273.15
     sample_ts_ds = xarray.open_dataset(PATH_SAMPLE_TS)[SAMPLE_VAR] - 273.15
